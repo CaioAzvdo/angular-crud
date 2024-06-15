@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+// @include mat-core();
+
+// $custom-app-primary: mat-palette($mat-red);
+// $custom-app-secondary: mat-palette($mat-indigo, A200, A400, A700);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
