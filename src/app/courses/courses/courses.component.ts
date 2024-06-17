@@ -29,6 +29,6 @@ export class CoursesComponent{
  }
  onAdd(){
   console.log('onAdd')
-  this.router.navigate(['courses/new']);
+  this.router.navigate(['new'], {relativeTo: this.route});
  }
 }
