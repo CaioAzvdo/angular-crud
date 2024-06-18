@@ -1,0 +1,21 @@
+.full-width{
+  width: 100%;
+}
+.action-buttons{
+  gap: 10px;
+}
+mat-card{
+  //margin-top: 20px;
+  margin: 2em auto;
+  max-width: 60%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 20px;
+}
+.min-width{
+  width: 100%;
+  min-width: 160px;
+}

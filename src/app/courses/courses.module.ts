@@ -5,6 +5,8 @@ import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { CourseFormComponent } from './course-form/course-form.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatOption, MatSelect} from "@angular/material/select";
 
 
 
@@ -16,7 +18,10 @@ import { CourseFormComponent } from './course-form/course-form.component';
   imports: [
     CommonModule,
     CoursesRoutingModule,
-    AppMaterialModule
+    AppMaterialModule,
+    ReactiveFormsModule,
+    MatSelect,
+    MatOption
   ]
 })
 export class CoursesModule { }
