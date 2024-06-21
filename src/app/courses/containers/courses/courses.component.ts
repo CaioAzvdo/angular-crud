@@ -1,7 +1,7 @@
-import { CoursesService } from './../services/courses.service';
+import { CoursesService } from '../../services/courses.service';
 import { Component } from '@angular/core';
-import { Course } from '../model/course';
-import { Observable } from 'rxjs';
+import { Course } from '../../model/course';
+import {catchError, Observable} from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -12,9 +12,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 export class CoursesComponent{
  courses$: Observable<Course[]>;
- displayedColumns = ['name', 'categoria','actions'];
 
-//  CoursesService: CoursesService;
+
 
  constructor(
   private coursesService: CoursesService,
@@ -22,9 +21,8 @@ export class CoursesComponent{
   private route : ActivatedRoute
 
  ){
-  // this.courses = [];
-  // this.CoursesService =  new CoursesService();
-  this.courses$ = this.coursesService.list();
+
+  this.courses$ = this.coursesService.list()
 
  }
  onAdd(){
