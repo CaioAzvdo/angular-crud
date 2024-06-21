@@ -1,7 +1,7 @@
 import {Component, Input, input, Output} from '@angular/core';
-import {Course} from "../model/course";
+import {Course} from "../../model/course";
 import {ActivatedRoute, Router} from "@angular/router";
-import {CoursesService} from "../services/courses.service";
+import {CoursesService} from "../../services/courses.service";
 import {async, Observable} from "rxjs";
 import EventEmitter from "node:events";
 
